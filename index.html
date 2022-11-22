@@ -8,6 +8,10 @@
 </head>
 <body>
 
+
+
+<video src="https://hay.github.io/test/dog.mp4" playsinline loop muted autoplay></video>
+
 	
 	<style>
 		video {
@@ -18,48 +22,7 @@
 	</style>
 	
 	
-	<video class="video_1" src="https://simg.marwin.kz/media/stories/chpdesk.mp4"></video>
-	<video class="video_1" src="https://simg.marwin.kz/media/stories/chpdesk.mp4"></video>
 
-	<button class="button">click</button>
-
-	<script defer>
-
-
-let btn = document.querySelector('.button');
-let video_1 = document.querySelectorAll('.video_1');
-
-btn.addEventListener('click', setFunc);
-
-video_1.forEach(video => {
-	
-	video.play();
-	video.muted = true;
-	video.loop = true;
-	video.setAttribute('preload', 'auto');
-	video.setAttribute('playsinline', '');
-});
-
-function setFunc() {
-	console.log(3333);
-}
-
-
-// const videoTagCustom = document.querySelectorAll('.safvid_custom-for');
-
-// videoTagCustom.forEach(video => {
-// 	if(video) {
-// 	video.click();
-// 	video.play();
-// 	video.muted = true;
-// 	video.loop = true;
-// 	video.setAttribute('autoplay', 'autoplay');
-// 	}
-// });	
-
-		
-
-	</script>
 	
 </body>
 </html>
