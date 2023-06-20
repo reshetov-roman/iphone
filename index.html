@@ -1,28 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css">
 </head>
 <body>
 
+  <style>
+    #simple-bar {
+      border: 1px solid grey;
+      width: 100%;
+      max-height: 200px;
+      min-height: 100px;
+      margin: 50px auto;
+    }
+
+    .simple-bar__custom::-webkit-scrollbar {
+      width: 6px;
+    }
+    .simple-bar__custom::-webkit-scrollbar-track {
+      background-color: #3a1010;
+      border-radius: 4px;
+    }
+    .simple-bar__custom::-webkit-scrollbar-thumb {
+      background: #c5c5c5;
+      border-radius: 4px;
+    }
+  </style>
+
+  <div id="simple-bar" class="simple-bar__custom">
+    <h2>Scroll me!</h2>
+    <p>Some more content</p>
+    <p class="odd">Some content</p>
+    <p>Some more content</p>
+    <p class="odd">Some content</p>
+    <p>Some more content</p>
+    <p class="odd">Some content</p>
+    <p>Some more content</p>
+    <p class="odd">Scroll me!</p>
+    <p>Some more content</p>
+    <p class="odd">Some content</p>
+    <p>Some more content</p>
+    <p class="odd">Some content</p>
+    <p>Some more content</p>
+    <p class="odd">Some content</p>
+    <p>Some more content</p>
+    <p class="odd">Scroll me!</p>
+    <p>Some more content</p>
+    <p class="odd">Some content</p>
+    <p>Some more content</p>
+    <p class="odd">Some content</p>
+    <p>Some more content</p>
+    <p class="odd">Some content</p>
+    <p>Some more content</p>
+    <p class="odd">Some content</p>
+    <p>Some more content</p>
+    <p class="odd">Some content</p>
+    <p>Some more content</p>
+    hey!
+  </div>
 
 
-<video src="https://hay.github.io/test/dog.mp4" loop muted autoplay></video>
-
-	
-	<style>
-		video {
-			width: 100%;
-			min-height: 100%;
-			height: auto;
-		}
-	</style>
-	
-	
-
-	
+  <script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.js"></script>
+  <script>
+    var myElement = document.getElementById('simple-bar');
+new SimpleBar(myElement, { autoHide: true });
+  </script>
+  
 </body>
 </html>
